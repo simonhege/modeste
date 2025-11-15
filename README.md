@@ -16,7 +16,6 @@ The application can be configured via environment variables:
 - `MODESTE_DEFAULT_PAGE`: The default page to serve for SPA routes (e.g., `index.html`)
 
 
-
 ## Local development
 ```bash
 go install
@@ -24,6 +23,11 @@ go install
 
 Create a `.env` file in the root directory with the following content:
 ```env
+MODESTE_ENDPOINT=your-minio-endpoint
+MODESTE_ACCESS_KEY=your-access-key
+MODESTE_SECRET_KEY=your-secret-key
+MODESTE_BUCKET_NAME=your-bucket-name
+MODESTE_DEFAULT_PAGE=index.html
 ```
 
 Then run the application with:
